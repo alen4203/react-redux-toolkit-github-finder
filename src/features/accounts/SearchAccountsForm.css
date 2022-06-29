@@ -1,0 +1,25 @@
+.search-accounts {
+  margin: 50px auto;
+}
+
+.search-accounts form {
+  padding: 20px;
+  font-weight: bold;
+}
+
+.search-accounts form input {
+  padding: 10px;
+  border-radius: 10px;
+  border: solid #333 1px;
+  margin: 10px;
+}
+
+.search-accounts form button {
+  border: none;
+  background: rgb(26, 148, 26);
+  color: #eee;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}

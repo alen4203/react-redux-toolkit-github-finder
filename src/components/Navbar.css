@@ -1,0 +1,17 @@
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px;
+  background-color: #333;
+}
+.navbar h2 {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-size: 1.8em;
+}
+.navbar h2 img {
+  width: 1em;
+  padding-right: 10px;
+  filter: invert(100%);
+}

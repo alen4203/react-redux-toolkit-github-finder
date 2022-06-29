@@ -1,0 +1,53 @@
+.repo {
+  background: #333;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  margin: 20px 0;
+  color: #eee;
+  text-align: left;
+}
+.repo h3 {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.repo h3 a {
+  margin-right: 10px;
+}
+.repo h3 a img {
+  width: 20px;
+  filter: invert(100%);
+}
+.repo .repo-stats {
+  display: flex;
+  justify-content: flex-start;
+}
+.repo .repo-stats div {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  border-radius: 5px;
+  margin-right: 20px;
+  color: #333;
+}
+.repo .repo-stats div.watchers {
+  background: rgb(55, 139, 218);
+}
+.repo .repo-stats div.stargazers {
+  background: rgb(119, 228, 77);
+}
+.repo .repo-stats div.issues {
+  background: rgb(214, 59, 48);
+}
+.repo .repo-stats div.forks {
+  background: rgb(223, 226, 36);
+}
+.repo .repo-stats .stat-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.repo .repo-stats div p {
+  margin: 0;
+}
