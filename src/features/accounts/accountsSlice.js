@@ -35,11 +35,7 @@ const accountsSlice = createSlice({
     status: 'idle',
     error: null,
   }),
-  reducers: {
-    clearCurAccount: (state, action) => {
-      state.currentAccount = null;
-    },
-  },
+  reducers: {},
   extraReducers(builder) {
     builder
       .addCase(fetchGithubAccounts.pending, (state, action) => {
@@ -82,8 +78,6 @@ const accountsSlice = createSlice({
     });
   },
 });
-
-export const { clearCurAccount } = accountsSlice.actions;
 
 export const {
   selectAll: selectAllAccounts,

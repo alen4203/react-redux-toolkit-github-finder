@@ -5,21 +5,43 @@
 .search-accounts form {
   padding: 20px;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
 }
-
-.search-accounts form input {
-  padding: 10px;
-  border-radius: 10px;
+.search-accounts form label {
+  display: flex;
+}
+.search-accounts form label .search-icon-container {
+  border-radius: 10px 0 0 10px;
+  background: #fff;
   border: solid #333 1px;
-  margin: 10px;
+  border-right: none;
+  box-sizing: border-box;
+  position: relative;
 }
-
+.search-accounts form label img {
+  display: block;
+  margin: auto;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20%;
+}
+.search-accounts form input {
+  padding: 5px 10px;
+  border: solid #333 1px;
+  border-left: none;
+  font-size: 1em;
+}
+.search-accounts form input:focus {
+  outline: none;
+}
 .search-accounts form button {
-  border: none;
+  border: solid #333 1px;
+  border-left: none;
   background: rgb(26, 148, 26);
   color: #eee;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 5px 10px;
+  border-radius: 0 10px 10px 0;
   font-weight: bold;
   cursor: pointer;
 }

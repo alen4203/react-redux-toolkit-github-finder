@@ -4,6 +4,7 @@ import { fetchGithubAccounts } from './accountsSlice';
 
 // Styles
 import './SearchAccountsForm.css';
+import searchIcon from '../../assets/searchIcon.svg';
 
 export default function SearchAccountsForm() {
   const dispatch = useDispatch();
@@ -18,7 +19,9 @@ export default function SearchAccountsForm() {
     <section className="search-accounts">
       <form onSubmit={handleSubmit}>
         <label>
-          <span>UserName: </span>
+          <div className="search-icon-container">
+            <img src={searchIcon} alt="search-icon" />
+          </div>
           <input
             type="text"
             onChange={(e) => setUserName(e.target.value)}
